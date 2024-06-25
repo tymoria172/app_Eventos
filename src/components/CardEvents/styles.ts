@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 import theme from "../../styles/theme";
-import { Dimensions } from "react-native";
+import { ColorValue, Dimensions, TouchableOpacity } from "react-native";
 
 const { width, height } = Dimensions.get("screen");
 
@@ -19,33 +19,31 @@ export const HeaderContainer = styled.View`
 `;
 
 export const HeaderTitulo = styled.Text`
-    color: ${theme.COLORS.WHITE};
-    font-family: ${theme.FONT_FAMILY.REGULAR};
-    font-size: ${theme.FONT_SIZE.HEADLINE.H7};
-`
+  color: ${theme.COLORS.WHITE};
+  font-family: ${theme.FONT_FAMILY.REGULAR};
+  font-size: ${theme.FONT_SIZE.HEADLINE.H7};
+`;
 
 export const HeaderNome = styled.Text`
-    color: ${theme.COLORS.WHITE};
-    font-family: ${theme.FONT_FAMILY.BOLD};
-    font-size: ${theme.FONT_SIZE.HEADLINE.H4};
-
-`
+  color: ${theme.COLORS.WHITE};
+  font-family: ${theme.FONT_FAMILY.BOLD};
+  font-size: ${theme.FONT_SIZE.HEADLINE.H4};
+`;
 export const HeaderData = styled.Text`
-    color: ${theme.COLORS.YELLOW};
-    font-family: ${theme.FONT_FAMILY.REGULAR};
-    font-size: ${theme.FONT_SIZE.HEADLINE.H7};
-`
+  color: ${theme.COLORS.YELLOW};
+  font-family: ${theme.FONT_FAMILY.REGULAR};
+  font-size: ${theme.FONT_SIZE.HEADLINE.H7};
+`;
 
 export const HeaderInfo = styled.Text`
-    color: ${theme.COLORS.GRAY_LIGHT};
-    font-family: ${theme.FONT_FAMILY.REGULAR};
-    font-size: ${theme.FONT_SIZE.HEADLINE.H7};
-`
+  color: ${theme.COLORS.GRAY_LIGHT};
+  font-family: ${theme.FONT_FAMILY.REGULAR};
+  font-size: ${theme.FONT_SIZE.HEADLINE.H7};
+`;
 
 export const BodyContainer = styled.View`
   flex: 1;
   width: 100%;
-  margin-top: 65%;
   gap: 10px;
   flex-direction: row;
   justify-content: space-between;
@@ -58,13 +56,12 @@ export const PriceContainer = styled.View`
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-
 `;
 
 export const CardDesc = styled.View`
   flex-direction: column;
   justify-content: flex-end;
-`
+`;
 
 export const CardBtn = styled.View`
   flex-direction: row;
@@ -72,7 +69,7 @@ export const CardBtn = styled.View`
   width: 40%;
   justify-content: center;
   gap: 8px;
-`
+`;
 
 export const TouchableBtn = styled.TouchableOpacity`
   background: ${theme.COLORS.BLACK};
@@ -81,12 +78,12 @@ export const TouchableBtn = styled.TouchableOpacity`
   border-radius: 200px;
   justify-content: center;
   align-items: center;
-`
+`;
 
 export const Container = styled.View`
   align-items: center;
   justify-content: center;
-  flex: 1;
+  margin-top: 10%;
 `;
 
 export const CardContainer = styled.View`
@@ -96,6 +93,33 @@ export const CardContainer = styled.View`
   overflow: hidden;
 `;
 
+export const MessageContainer = styled.View`
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+`;
 
+export const MessageInfo = styled.View`
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+`;
 
+export const MessageTitulo = styled.Text`
+  color: ${theme.COLORS.WHITE};
+  font-family: ${theme.FONT_FAMILY.MEDIUM};
+  font-size: ${theme.FONT_SIZE.HEADLINE.H4};
+`;
 
+export const PagesContainer = styled.View`
+  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 30px;
+`;
+
+export const PagesText = styled.Text`
+  color: ${theme.COLORS.WHITE};
+`;

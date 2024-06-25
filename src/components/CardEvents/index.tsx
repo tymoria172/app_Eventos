@@ -1,4 +1,12 @@
-import { View, Text, ImageBackground, TouchableOpacity } from "react-native";
+import {
+  View,
+  Text,
+  ImageBackground,
+  TouchableOpacity,
+  ScrollView,
+  FlatList,
+  StyleSheet,
+} from "react-native";
 import Background from "../../../assets/imgs/bannerCena.jpg";
 import {
   BodyContainer,
@@ -11,6 +19,11 @@ import {
   HeaderInfo,
   HeaderNome,
   HeaderTitulo,
+  MessageContainer,
+  MessageInfo,
+  MessageTitulo,
+  PagesContainer,
+  PagesText,
   PriceContainer,
   Titulo,
   TouchableBtn,
@@ -19,7 +32,16 @@ import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import theme from "../../styles/theme";
 import { Dimensions } from "react-native";
-import { DotsThree, Heart, Play } from "phosphor-react-native";
+import {
+  CalendarBlank,
+  ChartLine,
+  DotsThree,
+  Heart,
+  MapPin,
+  MegaphoneSimple,
+  MoonStars,
+  Play,
+} from "phosphor-react-native";
 
 export default function CardEventoCena() {
   const { width, height } = Dimensions.get("screen");
@@ -28,7 +50,6 @@ export default function CardEventoCena() {
     <Container
       style={{
         width: "100%",
-        height: "100%",
         borderRadius: 60,
       }}
     >
@@ -36,7 +57,7 @@ export default function CardEventoCena() {
         <ImageBackground
           style={{
             width: "100%",
-            height: "100%",
+            height: 460,
             borderRadius: 60,
           }}
           source={Background}
@@ -94,3 +115,4 @@ export default function CardEventoCena() {
     </Container>
   );
 }
+
