@@ -7,7 +7,7 @@ import {
   FlatList,
   StyleSheet,
 } from "react-native";
-import Background from "../../../assets/imgs/bannerCena.jpg";
+import Background from "../../../../../assets/imgs/bannerCena.jpg";
 import {
   BodyContainer,
   CardBtn,
@@ -30,7 +30,7 @@ import {
 } from "./styles";
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
-import theme from "../../styles/theme";
+import theme from "../../../../styles/theme";
 import { Dimensions } from "react-native";
 import {
   CalendarBlank,

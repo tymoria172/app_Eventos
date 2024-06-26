@@ -1,9 +1,9 @@
 import { Container, TouchableBtn } from "../CardEvents/styles";
-import BackgroundGradient from "../../../assets/imgs/gradiantTab.jpg";
+import BackgroundGradient from "../../../../../assets/imgs/gradiantTab.jpg";
 import { ImageBackground, TouchableOpacity, Text } from "react-native";
 import { CardQuit, TabDesc, TabInfo, TabText, TabTittle, TabTouchable, TabsContainer, TouchableCard } from "./style";
 import { X } from "phosphor-react-native";
-import theme from "../../styles/theme";
+import theme from "../../../../styles/theme";
 
 export default function CardTabs() {
   return (

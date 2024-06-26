@@ -1,5 +1,4 @@
 import { ImageBackground, View, Text, Image } from "react-native";
-import { TouchableBtn } from "../CardEvents/styles";
 import { Heart } from "phosphor-react-native";
 import { Data, Local, ShowTitle, Title, TouchableBtn3 } from "./styles";
 

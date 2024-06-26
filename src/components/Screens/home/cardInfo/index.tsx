@@ -1,4 +1,4 @@
-import Background from "../../../assets/imgs/awekenings.png";
+import Background from "../../../../../assets/imgs/awekenings.png";
 
 import React from "react";
 import { Container } from "../CardEvents/styles";
@@ -20,6 +20,7 @@ export default function CardEventoRep({imagem,titulo,data,local,preco}:Props) {
       style={{
         width: "100%",
         borderRadius: 60,
+        marginBottom: 10,
       }}
     >
       <CardInfo>

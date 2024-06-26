@@ -1,7 +1,7 @@
 import { MoonStars } from "phosphor-react-native";
 import { Name } from "./styles";
 import * as PhosphorIcons from "phosphor-react-native";
-import theme from "../../styles/theme";
+import theme from "../../../../styles/theme";
 import { LinearGradient } from "expo-linear-gradient";
 import { Dimensions, TouchableOpacity, View } from "react-native";
 
