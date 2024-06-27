@@ -12,6 +12,7 @@ import ProfileButton from "../../components/Screens/perfil/profileButton";
 import GrupoBtn from "../../components/Screens/perfil/groups";
 import { FlatlistGroups } from "../../components/Screens/perfil/FlatlistGroups";
 
+
 export default function Profile() {
   return (
     <View style={styles.container}>

@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@expo-google-fonts/montserrat": "^0.2.3",
+    "@react-native-community/blur": "^4.4.0",
     "@react-navigation/bottom-tabs": "^6.5.20",
     "@react-navigation/native": "^6.1.17",
     "expo": "~51.0.13",
+    "expo-blur": "^13.0.2",
     "expo-linear-gradient": "^13.0.2",
     "expo-status-bar": "~1.12.1",
     "phosphor-react-native": "^2.0.0",

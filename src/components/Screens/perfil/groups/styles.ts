@@ -7,6 +7,13 @@ export const ContainerBtn = styled.View`
     align-items: center;
 `
 
+export const AndroidBlurView = styled.View`
+    width: 45%;
+    height: 150px;
+    align-items: center;
+`
+
+
 export const TouchableGroup = styled.TouchableOpacity`
        width: 100px;
     margin-bottom: 5px;

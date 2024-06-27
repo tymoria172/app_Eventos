@@ -7,3 +7,5 @@ export const ContainerHeader = styled.View`
     margin: 30px 20px 0px 0px;
     
 `
+
+export const TouchableProfile = styled.TouchableOpacity``
