@@ -1,6 +1,5 @@
 import React from "react";
 import { FlatList, ImageBackground, Text, View, Image } from "react-native";
-import { Titulo } from "../../home/CardEvents/styles";
 import { FlatListContainer, Imagem, NPessoas, TextoTitulo } from "./styles";
 
 export function FlatlistGroups() {

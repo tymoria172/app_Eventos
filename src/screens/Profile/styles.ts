@@ -8,7 +8,7 @@ export const ContainerHeader = styled.View`
 
 export const ProfileContainer = styled.View`
   width: 29%;
-  height: 75%;
+  height: 62%;
   border: 1px solid white;
   border-radius: 150px;
   justify-content: center;

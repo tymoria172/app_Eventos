@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import theme from "../../../../styles/theme";
 
-export const ContainerBtn = styled.View`
+export const ContainerFav = styled.View`
     width: 45%;
     height: 150px;
     align-items: center;
@@ -10,15 +10,16 @@ export const ContainerBtn = styled.View`
 export const AndroidBlurView = styled.View`
     width: 45%;
     height: 150px;
+    align-items: center;
 `
 
 
-export const TouchableGroup = styled.TouchableOpacity`
+export const TouchableFav = styled.TouchableOpacity`
        width: 100px;
     margin-bottom: 5px;
 `
 
-export const TextGroup = styled.Text`
+export const TextSaves = styled.Text`
     color: ${theme.COLORS.WHITE};
     font-family: ${theme.FONT_FAMILY.MEDIUM};
     font-size: ${theme.FONT_SIZE.BUTTON.RG};

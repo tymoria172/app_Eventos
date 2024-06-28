@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import HeaderPerfil from "../../components/Screens/perfil/header";
 import {
   ContainerHeader,
@@ -11,19 +11,22 @@ import React from "react";
 import ProfileButton from "../../components/Screens/perfil/profileButton";
 import GrupoBtn from "../../components/Screens/perfil/groups";
 import { FlatlistGroups } from "../../components/Screens/perfil/FlatlistGroups";
+import { FlatlistSaves } from "../../components/Screens/perfil/FlatlistSaves";
+import SalvosBtn from "../../components/Screens/perfil/saves/index";
 
 
 export default function Profile() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
+      <ScrollView>
       <ContainerHeader>
         <HeaderPerfil />
       </ContainerHeader>
       <View
         style={{
           width: "100%",
-          height: "20%",
+          height: "19%",
           alignItems: "center",
           gap: 10,
         }}
@@ -38,7 +41,7 @@ export default function Profile() {
         style={{
           flexDirection: "row",
           gap: 10,
-          marginTop: "17%",
+          marginTop: "20%",
           justifyContent: "center",
           alignContent: "center",
         }}
@@ -78,7 +81,6 @@ export default function Profile() {
       <View style={{
         flexDirection: "row",
         width: "100%",
-        height: "100%",
         marginTop: 30,
         gap: 10,
         padding: 0,
@@ -88,7 +90,22 @@ export default function Profile() {
         <FlatlistGroups />
       </View>
 
+      <View style={{
+        flexDirection: "row",
+        width:"100%",
+        height: 300,
+        marginTop: 30,
+        gap: 10,
+        padding: 0,
+        margin: 0,
 
+
+      }}>
+          <SalvosBtn />
+          <FlatlistSaves />
+      </View>
+
+      </ScrollView>
     </View>
   );
 }

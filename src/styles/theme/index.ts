@@ -31,6 +31,8 @@ export default {
     GREEN_800: "#008000",
 
     RED: "#7A0000",
+    RED_GRADIENTE:"#3F0B0B",
+    REDLIGHT_GRADIENTE: "#DD2E2E",
     BROWN_200: "#EFDABB80",
     BROWN_600: "#A55837",
   },

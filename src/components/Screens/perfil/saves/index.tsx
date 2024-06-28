@@ -1,18 +1,17 @@
 import React from "react";
-import { AndroidBlurView, ContainerBtn, TextGroup, TouchableGroup } from "./styles";
+import { ContainerFav, TouchableFav, TextSaves } from "./style";
+import { BlurView } from "expo-blur";
 import { LinearGradient } from "expo-linear-gradient";
 import theme from "../../../../styles/theme";
 import { Plus } from "phosphor-react-native";
-import { BlurView } from "expo-blur";
 
 
 
 
-
-export default function GrupoBtn() {
+export default function SalvosBtn() {
   return (
-    <ContainerBtn>
-      <TouchableGroup>
+    <ContainerFav>
+      <TouchableFav>
         <BlurView intensity={100} tint="dark"
           style={{
             width: 130,
@@ -24,7 +23,7 @@ export default function GrupoBtn() {
 
           }}>
           <LinearGradient
-            colors={["transparent", theme.COLORS.BLUE]}
+            colors={["transparent", theme.COLORS.REDLIGHT_GRADIENTE, theme.COLORS.REDLIGHT_GRADIENTE]}
             start={[0, 0.7]}
             end={[0, 0]}
             style={{
@@ -33,6 +32,7 @@ export default function GrupoBtn() {
               borderRadius: 6,
               justifyContent: "center",
               alignItems: "center",
+              margin: 0,
             }}
           >
 
@@ -43,8 +43,8 @@ export default function GrupoBtn() {
 
         </BlurView>
 
-      </TouchableGroup>
-      <TextGroup>Novo grupo</TextGroup>
-    </ContainerBtn>
+      </TouchableFav>
+      <TextSaves>Adicionar Favoritos</TextSaves>
+    </ContainerFav>
   );
 }
